@@ -8,5 +8,6 @@ kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/
 kubectl apply -f https://docs.projectcalico.org/v3.3/getting-started/kubernetes/installation/hosted/canal/canal.yaml
 export KUBECONFIG=/etc/kubernetes/admin.conf
 echo 'SUCCESS !!!'
-kubectl get pod -o wide
+kubectl get node -o wide
 
+kubeadm join 192.151.212.37:6443 --token 1en3vc.k2fwuopchn1l3te7 --discovery-token-ca-cert-hash sha256:7a7fb8540dd97b10d57f5dad561534687fd4e350cb3d8ff78225ac6cd7f15819
