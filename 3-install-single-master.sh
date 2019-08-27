@@ -15,4 +15,4 @@ kubeadm token list
 openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der 2>/dev/null | \
    openssl dgst -sha256 -hex | sed 's/^.* //'
 
-kubeadm join 192.151.212.37:6443 --token 1en3vc.k2fwuopchn1l3te7 --discovery-token-ca-cert-hash sha256:7a7fb8540dd97b10d57f5dad561534687fd4e350cb3d8ff78225ac6cd7f15819
+kubeadm join 192.151.212.37:6443 --token [token] --discovery-token-ca-cert-hash sha256:[discovery-token-ca-cert-hash]
